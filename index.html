@@ -3,16 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ASF Bem-estar — Yoga, respiração e autocuidado para surfistas | ASF</title>
-<meta name="description" content="Bem-estar para surfistas: yoga para flexibilidade, exercícios de respiração e apneia, sono e autocuidado. Parte do ecossistema ASF.">
+<title>ASF Bem-estar — Sono, Recuperação e Mente para Surfistas | ASF</title>
+<meta name="description" content="Bem-estar real para surfistas: higiene do sono, recuperação muscular pós-surf, manejo do medo no line-up e rituais de autocuidado renovados a cada 5 dias. Guia gratuito da Associação de Surf Feminino.">
+<meta name="keywords" content="bem-estar surfista, sono e surf, recuperação pós-surf, medo no surf, autocuidado surf, yoga surfistas, saúde surf feminino">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="ASF — Associação de Surf Feminino">
 <link rel="canonical" href="https://acarolmourad-commits.github.io/asf-bemestar/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="ASF — Associação de Surf Feminino">
 <meta property="og:title" content="ASF Bem-estar — Corpo e mente prontos para o mar">
+<meta property="og:description" content="Sono, recuperação muscular, mente no line-up e rituais renovados a cada 5 dias.">
 <meta property="og:url" content="https://acarolmourad-commits.github.io/asf-bemestar/">
+<meta property="og:image" content="https://acarolmourad-commits.github.io/asf-app/assets/images/hero-surf.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#00A8CC">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"ASF Bem-estar","url":"https://acarolmourad-commits.github.io/asf-bemestar/","applicationCategory":"HealthApplication","operatingSystem":"Web","inLanguage":"pt-BR","isPartOf":{"@type":"WebSite","name":"ASF — Associação Surf Feminino","url":"https://acarolmourad-commits.github.io/asf-app/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quantas horas de sono uma surfista precisa?","acceptedAnswer":{"@type":"Answer","text":"Adultos precisam de 7 a 9 horas por noite, e atletas rendem mais com 8 a 10 horas. É durante o sono profundo que ocorre a maior liberação de hormônio do crescimento, essencial para a recuperação muscular. Dormir menos de 6 horas reduz tempo de reação e equilíbrio — dois pilares do surf."}},{"@type":"Question","name":"O que comer e beber depois do surf para recuperar melhor?","acceptedAnswer":{"@type":"Answer","text":"Nas primeiras 2 horas após a sessão, priorize reidratação (água ou bebida com eletrólitos) e uma refeição com carboidrato + proteína (ex.: fruta com iogurte, pão com ovos). A janela pós-exercício favorece a reposição de glicogênio e a recuperação muscular."}},{"@type":"Question","name":"Como lidar com o medo no line-up?","acceptedAnswer":{"@type":"Answer","text":"O medo é normal e protetor. Ferramentas eficazes: respiração lenta com expiração longa (acalma o sistema nervoso), ancoragem sensorial (nomeie 3 coisas que você vê e ouve), exposição gradual (comece em dias menores) e conversar com outras surfistas sobre a experiência."}},{"@type":"Question","name":"Como cuidar de cabelo e pele depois do surf?","acceptedAnswer":{"@type":"Answer","text":"Enxágue o cabelo com água doce logo ao sair do mar, use leave-in com proteção UV e evite escovar com o cabelo molhado e cheio de sal. Na pele: banho de água doce, hidratante corporal e, nas áreas expostas, protetor FPS 50+ reaplicado a cada 80 minutos durante a sessão."}}]}
 </script>
 <style>
 :root{--primary:#00A8CC;--dark:#0E2439;--purple:#9B59B6;--bg:#F7FBFC;--gray:#5A6B7A}
@@ -29,9 +40,17 @@ header p{opacity:.95;font-size:14px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
 .card{background:#fff;border-radius:14px;padding:16px 18px;box-shadow:0 2px 10px rgba(14,36,57,.06)}
 .card h2{font-size:16px;margin-bottom:4px}
+.card p,.card li{font-size:13.5px;line-height:1.6;color:#456}
+.card ul{margin:6px 0 0 16px}
+.card li{margin-bottom:4px}
 .muted{color:var(--gray);font-size:12.5px}
 .badge{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;margin:6px 6px 0 0;background:#E8F6FA;color:var(--primary)}
 footer{text-align:center;font-size:12.5px;color:var(--gray);padding:24px;border-top:1px solid #E5EEF2}
+.ritual{border-left:4px solid var(--primary);background:#E8F6FA;border-radius:0 12px 12px 0;padding:12px 14px;margin-top:6px}
+.ritual small{color:var(--gray)}
+.ciclo{display:inline-block;background:linear-gradient(90deg,var(--primary),var(--purple));color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:12px;margin-left:6px;vertical-align:middle}
+details{margin:.4rem 0;border:1px solid #E5EEF2;border-radius:10px;padding:.6rem .9rem;background:#fff}
+summary{cursor:pointer;font-weight:700;color:var(--purple);font-size:14px}
 </style>
 </head>
 <body>
@@ -52,6 +71,9 @@ footer{text-align:center;font-size:12.5px;color:var(--gray);padding:24px;border-
 <p>Yoga, respiração e autocuidado — porque surfar bem começa muito antes de entrar na água.</p>
 </header>
 <main class="wrap">
+<div class="card" style="margin-bottom:14px"><h2>🗓️ Ritual do ciclo <span class="ciclo">renova a cada 5 dias</span></h2>
+<div class="ritual"><b id="rt-t">…</b><p id="rt-d" style="margin-top:4px">…</p><small id="rt-em"></small></div>
+</div>
 <div class="grid">
 <div class="card"><h2>Yoga para surfistas</h2><div class="muted">Sequências de 10 minutos para quadril, ombros e lombar — a base do pop-up fluido.</div><a class="badge" href="https://acarolmourad-commits.github.io/asf-treino/">treinos semanais 🏋️</a></div>
 <div class="card"><h2>Respiração & apneia</h2><div class="muted">Exercícios seguros (sempre fora da água) para ficar calma em séries maiores.</div><a class="badge" href="https://acarolmourad-commits.github.io/asf-seguranca/">segurança no mar 🛟</a></div>
@@ -59,6 +81,33 @@ footer{text-align:center;font-size:12.5px;color:var(--gray);padding:24px;border-
 <div class="card"><h2>Autocuidado pós-surf</h2><div class="muted">Protetor solar, hidratação e cuidado com cabelo e pele depois do sal.</div><a class="badge" href="https://acarolmourad-commits.github.io/asf-app/bem-estar/">guia no app 🏄</a></div>
 <div class="card"><h2>Mente no line-up</h2><div class="muted">Lidar com medo, frustração e crowd: ferramentas mentais para evoluir.</div><a class="badge" href="https://acarolmourad-commits.github.io/asf-comunidade/">converse com as manas 🤝</a></div>
 <div class="card"><h2>Rodas de bem-estar</h2><div class="muted">Encontros de yoga na praia e meditação guiada com a comunidade ASF.</div><a class="badge" href="https://acarolmourad-commits.github.io/asf-eventos/">ver agenda 📅</a></div>
+</div>
+<h2 style="margin:22px 0 10px;font-size:18px">📚 Guias completos</h2>
+<div class="card" style="margin-bottom:14px"><h2>😴 Sono: o treino invisível</h2>
+<ul>
+<li><b>Meta:</b> 7–9h por noite; em períodos de treino intenso, 8–10h. É no sono profundo que acontece a maior parte da recuperação muscular e da consolidação motora (incluindo o que você treinou no pop-up).</li>
+<li><b>Menos de 6h</b> reduz tempo de reação, equilíbrio e tomada de decisão — exatamente o que o surf exige.</li>
+<li><b>Rotina para o dawn patrol:</b> durma 30–60 min mais cedo, deixe a mala pronta à noite e evite telas nos últimos 30 min.</li>
+<li><b>Regulare o relógio:</b> acordar sempre no mesmo horário (mesmo nos fins de semana) melhora a qualidade do sono mais que “compensar” dormindo até tarde.</li>
+</ul></div>
+<div class="card" style="margin-bottom:14px"><h2>🍌 Recuperação pós-surf que funciona</h2>
+<ul>
+<li><b>Primeiras 2 horas:</b> reidrate-se (água ou bebida com eletrólitos) e faça uma refeição com carboidrato + proteína — fruta com iogurte, pão com ovos, arroz com frango.</li>
+<li><b>Sinal de alerta:</b> dor muscular que não melhora em 72h ou dor articular aguda merece avaliação — não é “só cansaço”.</li>
+<li><b>Alongamento leve</b> de ombros e lombar por 5–10 min após a sessão reduz a rigidez do dia seguinte.</li>
+<li><b>Cabelo e pele:</b> água doce imediata, leave-in com UV no cabelo, hidratante na pele e protetor FPS 50+ reaplicado a cada 80 min durante a sessão.</li>
+</ul></div>
+<div class="card" style="margin-bottom:14px"><h2>🧠 Mente no line-up: ferramentas contra o medo</h2>
+<ul>
+<li><b>Expiração longa:</b> inspire 4s, expire 6–8s, por 1–2 min. A expiração longa ativa o sistema nervoso parassimpático e baixa a ansiedade na hora.</li>
+<li><b>Ancoragem sensorial (5-4-3-2-1):</b> nomeie 5 coisas que vê, 4 que ouve, 3 que sente no corpo. Tira a mente do “e se” e traz para o agora.</li>
+<li><b>Exposição gradual:</b> aumente o tamanho das ondas aos poucos, em dias com crowd amigável. Confiança se constrói em degraus.</li>
+<li><b>Converse:</b> medo compartilhado diminui. As rodas e a comunidade ASF existem para isso.</li>
+</ul></div>
+<div class="card" style="margin-bottom:14px"><h2>❓ Perguntas frequentes</h2>
+<details><summary>Quantas horas de sono uma surfista precisa?</summary><p>7–9h (atletas, 8–10h). Menos de 6h prejudica reação, equilíbrio e decisão no mar.</p></details>
+<details><summary>O que comer depois do surf?</summary><p>Nas primeiras 2h: reidratação + carboidrato com proteína (fruta com iogurte, pão com ovos).</p></details>
+<details><summary>Como lidar com o medo no line-up?</summary><p>Expiração longa, ancoragem sensorial, exposição gradual e conversar com outras surfistas.</p></details>
 </div>
 <p class="muted" style="margin-top:16px">Escolha a praia do próximo mergulho no <a href="https://acarolmourad-commits.github.io/asf-praias/" style="color:var(--primary)">ASF Praias</a>.</p>
 </main>
@@ -88,6 +137,25 @@ footer{text-align:center;font-size:12.5px;color:var(--gray);padding:24px;border-
   }
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',injectNav);}else{injectNav();}
 })();
+
+/* Ritual de bem-estar rotativo: muda automaticamente a cada 5 dias */
+const CICLO=5*24*60*60*1000;
+const RITUAIS=[
+ {t:'🌙 Higiene do sono',d:'Neste ciclo: deite 30 minutos mais cedo que o habitual e deixe o celular fora do quarto. Anote como você acorda no dia da sessão.'},
+ {t:'🧘 5 minutos de quietude',d:'Antes de checar o celular pela manhã: sente-se, feche os olhos e observe a respiração por 5 minutos. Só isso. Todos os dias do ciclo.'},
+ {t:'🍌 Pós-surf caprichado',d:'Prepare com antecedência seu lanche de recuperação (fruta + proteína) e leve na mochila. Coma em até 2h após sair da água.'},
+ {t:'📓 Gratidão do mar',d:'Depois de cada sessão (ou dia de praia), escreva 1 frase: pelo que você é grata hoje? No fim do ciclo, releia todas.'},
+ {t:'🫁 Expiração longa no trânsito',d:'Use os sinais vermelhos e filas do ciclo como lembrete: inspire 4s, expire 8s, 5 vezes. Chegue na praia já calma.'},
+ {t:'💧 Ritual de hidratação',d:'Uma garrafa de água sempre à vista neste ciclo: ao acordar, antes da sessão e ao sair do mar. Observe a diferença na energia.'},
+ {t:'🌅 Um amanhecer por ciclo',d:'Escolha 1 dia deste ciclo para ver o sol nascer (na praia ou de casa), sem telas. Só você e o começo do dia.'},
+ {t:'🤝 Conexão com uma mana',d:'Neste ciclo, converse de verdade com uma surfista sobre como ela lida com medo ou cansaço. Ouvir também é autocuidado.'}
+];
+const idx=Math.floor(Date.now()/CICLO);
+const rt=RITUAIS[idx%RITUAIS.length];
+document.getElementById('rt-t').textContent=rt.t;
+document.getElementById('rt-d').textContent=rt.d;
+const dias=Math.ceil((CICLO-(Date.now()%CICLO))/(24*60*60*1000));
+document.getElementById('rt-em').textContent='🔄 Novo ritual em '+dias+(dias===1?' dia':' dias');
 </script>
 </body>
 </html>
