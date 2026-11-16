@@ -16,7 +16,7 @@
 <meta property="og:url" content="https://acarolmourad-commits.github.io/asf-bemestar/">
 <meta property="og:locale" content="pt_BR">
 <meta name="theme-color" content="#00A8CC">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"ASF Bem-estar","url":"https://acarolmourad-commits.github.io/asf-bemestar/","applicationCategory":"HealthApplication","operatingSystem":"Web","inLanguage":"pt-BR","isPartOf":{"@type":"WebSite","name":"ASF — Associação Surf Feminino","url":"https://acarolmourad-commits.github.io/asf-app/"}}
 </script>
@@ -24,46 +24,42 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quantas horas de sono uma surfista precisa?","acceptedAnswer":{"@type":"Answer","text":"Adultos precisam de 7 a 9 horas por noite, e atletas rendem mais com 8 a 10 horas. É durante o sono profundo que ocorre a maior liberação de hormônio do crescimento, essencial para a recuperação muscular. Dormir menos de 6 horas reduz tempo de reação e equilíbrio — dois pilares do surf."}},{"@type":"Question","name":"O que comer e beber depois do surf para recuperar melhor?","acceptedAnswer":{"@type":"Answer","text":"Nas primeiras 2 horas após a sessão, priorize reidratação (água ou bebida com eletrólitos) e uma refeição com carboidrato + proteína (ex.: fruta com iogurte, pão com ovos). A janela pós-exercício favorece a reposição de glicogênio e a recuperação muscular."}},{"@type":"Question","name":"Como lidar com o medo no line-up?","acceptedAnswer":{"@type":"Answer","text":"O medo é normal e protetor. Ferramentas eficazes: respiração lenta com expiração longa (acalma o sistema nervoso), ancoragem sensorial (nomeie 3 coisas que você vê e ouve), exposição gradual (comece em dias menores) e conversar com outras surfistas sobre a experiência."}},{"@type":"Question","name":"Como cuidar de cabelo e pele depois do surf?","acceptedAnswer":{"@type":"Answer","text":"Enxágue o cabelo com água doce logo ao sair do mar, use leave-in com proteção UV e evite escovar com o cabelo molhado e cheio de sal. Na pele: banho de água doce, hidratante corporal e, nas áreas expostas, protetor FPS 50+ reaplicado a cada 80 minutos durante a sessão."}}]}
 </script>
 <style>
-:root{--primary:#00A8CC;--dark:#0E2439;--purple:#9B59B6;--bg:#F7FBFC;--gray:#5A6B7A}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Outfit',system-ui,sans-serif;background:var(--bg);color:var(--dark)}
-nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #E5EEF2;padding:10px 16px;display:flex;gap:14px;flex-wrap:wrap;z-index:10;justify-content:center}
-nav a{color:var(--primary);text-decoration:none;font-weight:700;font-size:13px}
-nav a.on{color:var(--purple)}
-header{background:linear-gradient(135deg,var(--primary),var(--purple));color:#fff;padding:44px 20px 32px;text-align:center}
-header h1{font-size:clamp(22px,5vw,32px);margin:6px 0}
-header .tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.9}
-header p{opacity:.95;font-size:14px}
-.wrap{max-width:860px;margin:0 auto;padding:24px 16px 60px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
-.card{background:#fff;border-radius:14px;padding:16px 18px;box-shadow:0 2px 10px rgba(14,36,57,.06)}
-.card h2{font-size:16px;margin-bottom:4px}
-.card p,.card li{font-size:13.5px;line-height:1.6;color:#456}
-.card ul{margin:6px 0 0 16px}
-.card li{margin-bottom:4px}
-.muted{color:var(--gray);font-size:12.5px}
-.badge{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;margin:6px 6px 0 0;background:#E8F6FA;color:var(--primary)}
-footer{text-align:center;font-size:12.5px;color:var(--gray);padding:24px;border-top:1px solid #E5EEF2}
-.ritual{border-left:4px solid var(--primary);background:#E8F6FA;border-radius:0 12px 12px 0;padding:12px 14px;margin-top:6px}
-.ritual small{color:var(--gray)}
-.ciclo{display:inline-block;background:linear-gradient(90deg,var(--primary),var(--purple));color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:12px;margin-left:6px;vertical-align:middle}
-details{margin:.4rem 0;border:1px solid #E5EEF2;border-radius:10px;padding:.6rem .9rem;background:#fff}
-summary{cursor:pointer;font-weight:700;color:var(--purple);font-size:14px}
-
-/* Bem-estar: leitura, segurança e acessibilidade */
-header{background:linear-gradient(135deg,#0E536B,#087E91 58%,#7560A8)!important}
-header h1,header p,header .tag{color:#fff!important}
-.wrap{max-width:1040px}
-.grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:18px}
-.card{padding:20px}
-.card h2{font-size:17px;line-height:1.35}
-.card p,.card li,.muted{font-size:14px;line-height:1.7}
-.badge{display:inline-flex;align-items:center;text-decoration:none;margin-top:12px;padding:7px 12px}
-.ritual{border-left-color:#087E91;background:#E8F6F7}
-details[open] summary{margin-bottom:8px}
-.safety-note{margin:18px 0;padding:16px 18px;border:1px solid #F0D8A8;border-radius:14px;background:#FFF9EC;color:#654B20;font-size:14px;line-height:1.65}
-.sources{font-size:13px;line-height:1.7}
-@media(max-width:600px){header{padding:34px 18px 28px}.wrap{padding:18px 14px 48px}.card{padding:17px}.grid{grid-template-columns:1fr}}
+:root{--ink:#102d43;--ocean:#087f9e;--aqua:#16b6c8;--lav:#7564a8;--paper:#f4f8fa;--muted:#607482;--line:#dce7ec}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:Outfit,'DM Sans',sans-serif}
+.hero{position:relative;overflow:hidden;background:linear-gradient(125deg,#102d43 0%,#075b78 58%,#7564a8 100%);color:#fff;padding:clamp(42px,8vw,78px) 20px 76px;text-align:center}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid #ffffff22;border-radius:50%;width:360px;height:360px;pointer-events:none}
+.hero:before{left:-190px;top:-180px}.hero:after{right:-190px;bottom:-260px;width:500px;height:500px}
+.hero-inner{position:relative;z-index:1;max-width:850px;margin:auto}
+.eyebrow{font-size:11px;letter-spacing:2.4px;font-weight:800;text-transform:uppercase;color:#a9edf0}
+.hero h1{font-size:clamp(34px,7vw,58px);line-height:1.04;margin:12px 0}.hero p{max-width:660px;margin:0 auto;color:#e0f2f5;font-size:clamp(15px,2.5vw,18px)}
+.hero-pills{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:22px}.hero-pills span{font-size:12px;border:1px solid #ffffff40;border-radius:99px;padding:6px 11px;background:#ffffff12}
+main{max-width:1120px;margin:auto;padding:28px 18px 64px}
+.ritual-feature{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;background:linear-gradient(110deg,#e4f5f5,#f0edf8);border:1px solid #d9e8ec;border-radius:20px;padding:20px 22px;margin:-58px 0 26px;position:relative;z-index:2;box-shadow:0 12px 34px #102d430c}
+.ritual-icon,.card-icon{display:grid;place-items:center;background:#fff}.ritual-icon{width:54px;height:54px;border-radius:17px;font-size:27px}
+.ritual-kicker{display:block;color:var(--ocean);font-size:10px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase}
+.ritual-feature h2{font-size:21px;margin:2px 0 3px}.ritual-feature p{font-size:14px;color:#526979;margin:0}.ritual-feature small{display:block;color:var(--muted);font-size:11px;margin-top:7px}
+.ciclo{display:inline-flex;background:#fff;color:var(--ocean);font-size:10px;font-weight:800;padding:4px 9px;border-radius:99px;margin-left:7px;vertical-align:middle}
+.section-title{display:flex;align-items:center;gap:10px;margin:30px 2px 14px}.section-title h2{font-size:22px;margin:0}.section-title span{font-size:12px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card,.guide-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 4px 18px #102d4308;transition:transform .18s,border-color .18s,box-shadow .18s}
+@media(hover:hover){.card:hover,.guide-card:hover{transform:translateY(-3px);border-color:#9acbd5;box-shadow:0 12px 28px #102d4312}}
+.card-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}.card-icon{width:44px;height:44px;flex:0 0 44px;border-radius:14px;background:#e8f6f7;font-size:22px}
+.card h2{font-size:18px;line-height:1.25;margin:0}.card p,.card li,.guide-card p,.guide-card li{font-size:14px;line-height:1.7;color:#435a68}
+.card p{margin:0}.card ul,.guide-card ul{margin:8px 0 0 19px;padding:0}.card li,.guide-card li{margin-bottom:7px}
+.muted{color:var(--muted);font-size:13px;line-height:1.65}
+.badge{display:inline-flex;align-items:center;text-decoration:none;font-size:11px;font-weight:800;padding:7px 12px;border-radius:99px;margin-top:14px;background:#e8f6fa;color:var(--ocean);border:1px solid #d7edf1}.badge:hover{background:#d8f0f3;color:var(--ink)}
+.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.guide-card h3{font-size:19px;margin:0 0 10px}
+.safety-note{margin:22px 0;padding:17px 19px;border:1px solid #f0d8a8;border-radius:16px;background:#fff9ec;color:#654b20;font-size:14px;line-height:1.7}
+details{margin:.5rem 0;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fbfdfe}summary{cursor:pointer;font-weight:700;color:var(--ocean);font-size:14px}details p{padding-top:9px}
+.sources{margin-top:18px;font-size:13px;line-height:1.7}.sources ul{margin:8px 0 0 18px}
+.end-link{margin:22px 2px 0;color:var(--muted);font-size:13px}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:26px 16px;border-top:1px solid var(--line);background:#fff}footer a,a{color:var(--ocean)}footer a{font-weight:700}
+:focus-visible{outline:3px solid #16b6c8;outline-offset:3px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){main{padding:22px 13px 48px}.grid,.guide-grid{grid-template-columns:1fr}.ritual-feature{grid-template-columns:1fr;margin-top:-52px;padding:18px}.ritual-icon{width:46px;height:46px}.section-title{align-items:flex-start;flex-direction:column;gap:2px}.hero{padding-bottom:72px}.card,.guide-card{padding:18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
 <meta property="og:image" content="https://acarolmourad-commits.github.io/thumbnails/asf-bemestar.jpg">
 <meta property="og:image:width" content="1200">
@@ -71,57 +67,52 @@ details[open] summary{margin-bottom:8px}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://acarolmourad-commits.github.io/thumbnails/asf-bemestar.jpg">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1643806355443576" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://acarolmourad-commits.github.io/asf-app/asf-site-redesign.css">
 </head>
 <body>
 
-<header>
-<div class="tag">ASF · Bem-estar</div>
-<h1>Corpo e mente prontos para o mar</h1>
-<p>Hábitos possíveis para cuidar do corpo e da mente antes e depois de uma sessão — com segurança, informação e respeito ao seu ritmo.</p>
-</header>
-<main class="wrap">
-<div class="card" style="margin-bottom:14px"><h2>🗓️ Ritual do ciclo <span class="ciclo">renova a cada 5 dias</span></h2>
-<div class="ritual"><b id="rt-t">…</b><p id="rt-d" style="margin-top:4px">…</p><small id="rt-em"></small></div>
-</div>
+<header class="hero"><div class="hero-inner"><div class="eyebrow">ASF · Associação de Surf Feminino</div><h1>Bem-estar para<br>viver melhor o mar.</h1><p>Pequenos cuidados com o corpo e a mente que acompanham cada sessão — antes, durante e depois do surf.</p><div class="hero-pills"><span>🌙 Sono e recuperação</span><span>🧘 Yoga e autocuidado</span><span>💙 Saúde emocional</span></div></div></header>
+<main>
+<section class="ritual-feature" aria-live="polite"><div class="ritual-icon">🌿</div><div><span class="ritual-kicker">Ritual do ciclo <span class="ciclo">renova a cada 5 dias</span></span><h2 id="rt-t">…</h2><p id="rt-d">…</p><small id="rt-em"></small></div></section>
+<div class="section-title"><h2>Explore o bem-estar</h2><span>Conteúdos e práticas para sua rotina de surf</span></div>
 <div class="grid">
-<div class="card"><h2>Yoga para surfistas</h2><div class="muted">Sequências de 10 minutos para quadril, ombros e lombar — a base do pop-up fluido.</div><a class="badge" href="https://acarolmourad-commits.github.io/asf-treino/">treinos semanais 🏋️</a></div>
-<div class="card"><h2>Respiração consciente</h2><div class="muted">Pausas de respiração confortável em terra para relaxar. Sem apneia, hiperventilação ou desafios de fôlego.</div><a class="badge" href="https://acarolmourad-commits.github.io/asf-respira/">conheça o ASF Respira 🌬️</a></div>
-<div class="card"><h2>Sono da surfista</h2><div class="muted">Dormir bem é o melhor treino: rotina noturna para sessões ao amanhecer.</div><a class="badge" href="https://acarolmourad-commits.github.io/asf-previsao/">melhor horário amanhã 🌊</a></div>
-<div class="card"><h2>Autocuidado pós-surf</h2><div class="muted">Protetor solar, hidratação e cuidado com cabelo e pele depois do sal.</div><a class="badge" href="https://acarolmourad-commits.github.io/asf-app/bem-estar/">guia no app 🏄</a></div>
-<div class="card"><h2>Mente no line-up</h2><div class="muted">Lidar com medo, frustração e crowd: ferramentas mentais para evoluir.</div><a class="badge" href="https://acarolmourad-commits.github.io/asf-comunidade/">converse com as manas 🤝</a></div>
-<div class="card"><h2>Bem-estar em comunidade</h2><div class="muted">Troque experiências, encontre apoio e acompanhe as conversas da comunidade ASF.</div><a class="badge" href="https://acarolmourad-commits.github.io/asf-comunidade/">converse com as manas 🤝</a></div>
+<article class="card"><div class="card-head"><span class="card-icon" aria-hidden="true">🧘</span><h2>Yoga para surfistas</h2></div><p class="muted">Movimentos e práticas para mobilidade, consciência corporal e recuperação, respeitando seu nível.</p><a class="badge" href="https://acarolmourad-commits.github.io/asf-yoga/">práticas e mobilidade →</a></article><a class="badge" href="https://acarolmourad-commits.github.io/asf-treino/">treinos semanais 🏋️</a></div>
+<article class="card"><div class="card-head"><span class="card-icon" aria-hidden="true">🌬️</span><h2>Respiração consciente</h2></div><p class="muted">Pausas de respiração confortável em terra, sem apneia, hiperventilação ou desafios de fôlego.</p><a class="badge" href="https://acarolmourad-commits.github.io/asf-respira/">pausas confortáveis em terra →</a></article><a class="badge" href="https://acarolmourad-commits.github.io/asf-respira/">conheça o ASF Respira 🌬️</a></div>
+<article class="card"><div class="card-head"><span class="card-icon" aria-hidden="true">🌙</span><h2>Sono da surfista</h2></div><p class="muted">Descanso e hábitos noturnos para apoiar a recuperação e a disposição para surfar.</p><a class="badge" href="https://acarolmourad-commits.github.io/asf-sono/">descanso e rotina →</a></article><a class="badge" href="https://acarolmourad-commits.github.io/asf-previsao/">melhor horário amanhã 🌊</a></div>
+<article class="card"><div class="card-head"><span class="card-icon" aria-hidden="true">☀️</span><h2>Autocuidado pós-surf</h2></div><p class="muted">Cuidados simples com a pele, o cabelo e a hidratação depois do contato com o mar.</p><a class="badge" href="https://acarolmourad-commits.github.io/asf-app/bem-estar/">pele, cabelo e hidratação →</a></article><a class="badge" href="https://acarolmourad-commits.github.io/asf-app/bem-estar/">guia no app 🏄</a></div>
+<article class="card"><div class="card-head"><span class="card-icon" aria-hidden="true">💙</span><h2>Mente no line-up</h2></div><p class="muted">Ferramentas para lidar com medo, frustração e pressão, sem ultrapassar seus limites.</p><a class="badge" href="https://acarolmourad-commits.github.io/asf-mental/">confiança e equilíbrio emocional →</a></article><a class="badge" href="https://acarolmourad-commits.github.io/asf-comunidade/">converse com as manas 🤝</a></div>
+<article class="card"><div class="card-head"><span class="card-icon" aria-hidden="true">🤝</span><h2>Bem-estar em comunidade</h2></div><p class="muted">Troque experiências, encontre apoio e acompanhe as conversas da comunidade ASF.</p><a class="badge" href="https://acarolmourad-commits.github.io/asf-comunidade/">troca e apoio entre manas →</a></article><a class="badge" href="https://acarolmourad-commits.github.io/asf-comunidade/">converse com as manas 🤝</a></div>
 </div>
-<h2 style="margin:22px 0 10px;font-size:20px">📚 Guias completos</h2>
+<div class="section-title"><h2>Guias completos</h2><span>Informação prática para cuidar de você</span></div>
+<div class="guide-grid">
 <div class="safety-note"><strong>Segurança em primeiro lugar:</strong> nunca pratique apneia, hiperventilação ou desafios de prender a respiração como forma de relaxamento ou preparação para o surf. Não faça exercícios respiratórios dentro da água. A perda de consciência por falta de oxigênio pode acontecer sem aviso e levar ao afogamento. Em caso de tontura ou falta de ar, interrompa a prática.</div>
-<div class="card" style="margin-bottom:14px"><h2>😴 Sono: o treino invisível</h2>
+<article class="guide-card"><h3>😴 Sono: o treino invisível</h3>
 <ul>
 <li><b>Referência:</b> para a maioria dos adultos, recomenda-se dormir pelo menos 7 horas por noite. A necessidade varia entre pessoas e pode mudar conforme rotina, saúde e carga de treino.</li>
 <li><b>Observe sua disposição:</b> sono insuficiente pode prejudicar atenção, humor e desempenho. Sonolência persistente ou dificuldade frequente para dormir merece conversa com um profissional de saúde.</li>
 <li><b>Rotina para o dawn patrol:</b> durma 30–60 min mais cedo, deixe a mala pronta à noite e evite telas nos últimos 30 min.</li>
 <li><b>Regularidade ajuda:</b> tente manter horários de dormir e acordar consistentes, ajustando a rotina à sua realidade.</li>
-</ul></div>
-<div class="card" style="margin-bottom:14px"><h2>🍌 Recuperação pós-surf que funciona</h2>
+</ul></article>
+<article class="guide-card"><h3>🍌 Recuperação pós-surf que funciona</h3>
 <ul>
 <li><b>Depois da sessão:</b> reponha líquidos e, quando possível, faça uma refeição ou lanche com carboidratos e proteínas. Água costuma atender sessões comuns; calor, duração e suor podem alterar a necessidade de líquidos e sais.</li>
 <li><b>Sinal de alerta:</b> dor muscular que não melhora em 72h ou dor articular aguda merece avaliação — não é “só cansaço”.</li>
 <li><b>Mobilidade leve:</b> movimentos confortáveis podem ajudar a voltar à rotina. Não force amplitudes nem alongue sobre dor aguda.</li>
 <li><b>Cabelo e pele:</b> enxágue com água doce quando possível, hidrate a pele e use proteção solar de amplo espectro e resistente à água. Reaplique conforme o rótulo — em geral, a cada 2 horas e após nadar ou suar.</li>
-</ul></div>
-<div class="card" style="margin-bottom:14px"><h2>🧠 Mente no line-up: ferramentas contra o medo</h2>
+</ul></article>
+<article class="guide-card"><h3>🧠 Mente no line-up: ferramentas contra o medo</h3>
 <ul>
 <li><b>Respiração confortável:</b> em terra e fora da água, deixe o ar entrar e sair sem forçar, sem prender a respiração e sem contar tempos se isso causar desconforto. Pare se sentir tontura ou falta de ar.</li>
 <li><b>Ancoragem sensorial:</b> com os olhos abertos e em local seguro, observe elementos ao redor — cores, sons e pontos de apoio. Não faça exercícios de olhos fechados dentro ou perto da água.</li>
 <li><b>Respeite seus limites:</b> escolha condições compatíveis com sua experiência, observe o mar e peça companhia ou orientação. Não use exposição gradual como motivo para entrar em condições acima da sua capacidade.</li>
 <li><b>Converse:</b> medo compartilhado diminui. As rodas e a comunidade ASF existem para isso.</li>
-</ul></div>
-<div class="card" style="margin-bottom:14px"><h2>❓ Perguntas frequentes</h2>
+</ul></article>
+<article class="guide-card"><h3>❓ Perguntas frequentes</h3>
 <details><summary>Quantas horas de sono uma surfista precisa?</summary><p>Para a maioria dos adultos, a referência é dormir pelo menos 7 horas por noite. A necessidade individual varia. Se houver dificuldade persistente para dormir ou sonolência excessiva, procure orientação profissional.</p></details>
 <details><summary>O que comer depois do surf?</summary><p>Após a sessão, reponha líquidos e inclua carboidratos e proteínas em uma refeição ou lanche, conforme sua fome e rotina.</p></details>
 <details><summary>Como lidar com o medo no line-up?</summary><p>Respiração confortável em terra, ancoragem sensorial com olhos abertos, escolha de condições adequadas à sua experiência e conversa com pessoas de confiança.</p></details>
-</div>
-<section class="card sources" aria-labelledby="fontes-bemestar"><h2 id="fontes-bemestar">Fontes e referências</h2><ul><li><a href="https://www.cdc.gov/sleep/about/" target="_blank" rel="noopener">CDC — sono e saúde</a></li><li><a href="https://www.redcross.org/content/dam/redcross/training-services/scientific-advisory-council/2022-Hypoxic-Blackout-Joint-Statement-Red-Cross-Y-USA-Swimming-1-10-2022.pdf" target="_blank" rel="noopener">American Red Cross / USA Swimming / YMCA — segurança respiratória na água</a></li></ul><p class="muted">Conteúdo educativo geral; não substitui avaliação ou orientação individual de profissionais de saúde, educação física ou salvamento aquático.</p></section>
-<p class="muted" style="margin-top:16px">Escolha a praia do próximo mergulho no <a href="https://acarolmourad-commits.github.io/asf-praias/" style="color:var(--primary)">ASF Praias</a>.</p>
+</article></div>
+<section class="guide-card sources" aria-labelledby="fontes-bemestar"><h2 id="fontes-bemestar">Fontes e referências</h2><ul><li><a href="https://www.cdc.gov/sleep/about/" target="_blank" rel="noopener">CDC — sono e saúde</a></li><li><a href="https://www.redcross.org/content/dam/redcross/training-services/scientific-advisory-council/2022-Hypoxic-Blackout-Joint-Statement-Red-Cross-Y-USA-Swimming-1-10-2022.pdf" target="_blank" rel="noopener">American Red Cross / USA Swimming / YMCA — segurança respiratória na água</a></li></ul><p class="muted">Conteúdo educativo geral; não substitui avaliação ou orientação individual de profissionais de saúde, educação física ou salvamento aquático.</p></section>
+<p class="end-link">Escolha a praia da próxima sessão no <a href="https://acarolmourad-commits.github.io/asf-praias/" style="color:var(--primary)">ASF Praias</a>.</p>
 </main>
 <footer>🌊 ASF — Associação Surf Feminino · <a href="https://acarolmourad-commits.github.io/" style="color:var(--primary)">Hub de apps</a> · <a href="https://acarolmourad-commits.github.io/asf-app/" style="color:var(--primary)">App principal</a></footer>
 
